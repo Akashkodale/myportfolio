@@ -106,7 +106,8 @@
 /*** Header ***/
 #home {
     margin-bottom: 6rem;
-    background: url() left top no-repeat;
+    background: url(/img/bg1.jpg) no-repeat;
+background-size: cover;
 }
 
 .typed-cursor {
@@ -207,6 +208,9 @@
 }
 
 
+
+
+
 /*** About ***/
 #about .years .display-1 {
     font-size: 10rem;
@@ -224,6 +228,16 @@
     height: 5px;
     border-radius: 5px;
 }
+
+.logo-container {
+    margin-right: 10px; /* Adjust margin as needed */
+}
+.logo-container img {
+    width: 25px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 8px; /* Add margin to the bottom */
+}
+
 
 #skill .progress .progress-bar {
     width: 0px;
