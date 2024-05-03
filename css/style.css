@@ -54,6 +54,7 @@
 .btn-square {
     width: 38px;
     height: 38px;
+    border-radius: 50%;
 }
 
 .btn-sm-square {
@@ -267,6 +268,44 @@ background-size: cover;
     justify-content: center;
     background: url(../img/bg-icon.png) center center no-repeat;
     background-size: cover;
+}
+
+/* Add animation */
+@keyframes scaleIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Apply shadow and style */
+.service-item {
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Add some space between items */
+    padding: 15px; /* Adjust padding */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .service-item {
+        margin-bottom: 10px; /* Adjust space between items for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Ensure cards adjust their width based on content */
+.service-item {
+    width: fit-content;
+    max-width: 100%; /* Ensure cards don't exceed container width */
+}
+
+/* Apply shadow and animation on hover */
+.service-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust hover shadow */
+    animation: scaleIn 0.3s ease forwards;
 }
 
 
