@@ -26,6 +26,11 @@
     });
 
 
+
+
+
+    
+
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
         if (this.hash !== "") {
@@ -110,6 +115,7 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
 
 
     // Testimonials carousel

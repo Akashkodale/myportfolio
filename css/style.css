@@ -367,6 +367,31 @@
 }
 
 
+
+/* Certification Css */
+.carousel-item img {
+    max-height: 100%;
+    width: auto;
+}
+
+#carouselExampleInterval {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    #carouselExampleInterval {
+        max-width: 600px; /* Adjust the max-width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #carouselExampleInterval {
+        max-width: 400px; /* Adjust the max-width for smaller screens */
+    }
+}
+
+
 /*** Team ***/
 .team-item img {
     transition: .5s;
